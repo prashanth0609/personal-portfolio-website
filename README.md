@@ -24,7 +24,7 @@ A modern and responsive personal portfolio website built using HTML and CSS.
 Prashanth Athmakuri
 
 ## Live Demo
-Add your deployed portfolio link here.
+https://dynamic-elf-24b4a0.netlify.app/
 
 ## GitHub Repository
 https://github.com/prashanth0609/
