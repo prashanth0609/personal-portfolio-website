@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#050816;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#070b1a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#9b5cff;
+    font-size:35px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#9b5cff;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:70px 8%;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:75px;
+    line-height:90px;
+}
+
+.hero-text span{
+    color:#9b5cff;
+}
+
+.hero-text h3{
+    margin:20px 0;
+    font-size:24px;
+    color:#ddd;
+}
+
+.hero-text p{
+    color:#bdbdbd;
+    line-height:32px;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border:1px solid white;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+    transition:0.3s;
+}
+
+.purple{
+    background:#9b5cff;
+    border:none;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* About */
+
+.card-section{
+    margin:60px 8%;
+    background:#0b1020;
+    border-radius:20px;
+    padding:40px;
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.about-image img{
+    width:300px;
+    border-radius:20px;
+    border:3px solid #9b5cff;
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h2{
+    color:#9b5cff;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    line-height:32px;
+    color:#ccc;
+    margin-bottom:20px;
+}
+
+.about-info{
+    display:flex;
+    gap:50px;
+    margin-top:30px;
+}
+
+.about-info i{
+    color:#9b5cff;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+/* Skills */
+
+.section-title{
+    text-align:center;
+    color:#9b5cff;
+    margin:70px 0 40px;
+    font-size:35px;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:0 8%;
+}
+
+.skill-box{
+    background:#0b1020;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-10px);
+}
+
+.skill-box i{
+    font-size:45px;
+    margin-bottom:15px;
+    color:#9b5cff;
+}
+
+/* Projects */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:0 8%;
+}
+
+.project-card{
+    background:#0b1020;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:20px 20px 10px;
+}
+
+.project-card p{
+    padding:0 20px 20px;
+    color:#ccc;
+    line-height:28px;
+}
+
+.project-card a{
+    display:inline-block;
+    margin:0 20px 20px;
+    padding:10px 20px;
+    border:1px solid #9b5cff;
+    border-radius:8px;
+    text-decoration:none;
+    color:#9b5cff;
+}
+
+/* Resume + Contact */
+
+.resume-contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    padding:80px 8%;
+}
+
+.resume-box,
+.contact-box{
+    background:#0b1020;
+    padding:40px;
+    border-radius:20px;
+}
+
+.resume-box h2,
+.contact-box h2{
+    color:#9b5cff;
+    margin-bottom:20px;
+}
+
+.resume-box p,
+.contact-box p{
+    color:#ccc;
+    line-height:30px;
+    margin-bottom:15px;
+}
+
+.contact-box i{
+    color:#9b5cff;
+    margin-right:10px;
+}
+
+.contact-box a{
+    color:#9b5cff;
+    text-decoration:none;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#070b1a;
+    color:#aaa;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .hero,
+    .card-section{
+        flex-direction:column;
+    }
+
+    .resume-contact{
+        grid-template-columns:1fr;
+    }
+
+    .hero-text h1{
+        font-size:50px;
+        line-height:65px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .about-info{
+        flex-direction:column;
+        gap:20px;
+    }
+}
